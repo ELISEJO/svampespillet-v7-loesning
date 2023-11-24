@@ -1,0 +1,300 @@
+#screen {
+  position: relative;
+  width: 100%;
+  aspect-ratio: 16/9;
+  background-color: red;
+  overflow: hidden;
+}
+
+#game {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+#game_background {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-color: bisque;
+  background-image: url(../img/baggrund.svg);
+  background-size: cover;
+}
+#game_elements {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+}
+
+/* Spilelementer og mellemgrund */
+/* Husk både container og sprite til de elementer du skal klikke på */
+
+/* ********************** GODE Carljohan svampe ******************* */
+#carljohan_container,
+#carljohan_container2,
+#carljohan_container3 {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 5/7;
+  transform-origin: center 95%;
+}
+
+#carljohan_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_r.svg);
+  background-size: cover;
+}
+#carljohan_sprite2 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_g.svg);
+  background-size: cover;
+}
+
+#carljohan_sprite3 {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/carljohan_b.svg);
+  background-size: cover;
+}
+
+/* ********************** DÅRLIGE fluesvampe ******************* */
+
+#fluesvamp_container {
+  position: absolute;
+  width: 18%;
+  aspect-ratio: 7/8;
+  transform-origin: center 95%;
+}
+
+#fluesvamp_sprite {
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/fluesvamp_2.svg);
+  background-size: cover;
+}
+
+/* ********************** Carljohan positioner ******************* */
+.pos1 {
+  top: 7%;
+  left: 2%;
+}
+.pos2 {
+  top: 27%;
+  left: 20%;
+}
+.pos3 {
+  top: 12%;
+  left: 35%;
+}
+.pos4 {
+  top: 56%;
+  left: 35%;
+}
+.pos5 {
+  top: 2%;
+  left: 54%;
+}
+.pos6 {
+  top: 48%;
+  left: 49%;
+}
+.pos7 {
+  top: 24%;
+  left: 65%;
+}
+.pos8 {
+  top: 4%;
+  left: 78%;
+}
+.pos9 {
+  top: 63%;
+  left: 70%;
+}
+.pos10 {
+  top: 37%;
+  left: 82%;
+}
+/* ********************** fluesvampe positioner******************* */
+.posFall1 {
+  top: -20%;
+  left: 15%;
+}
+.posFall2 {
+  top: -20%;
+  left: 35%;
+}
+.posFall3 {
+  top: -20%;
+  left: 55%;
+}
+.posFall4 {
+  top: -20%;
+  left: 75%;
+}
+.posFall5 {
+  top: -20%;
+  left: 85%;
+}
+
+#mellemgrund {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/mellemgrund.svg);
+  background-size: cover;
+  pointer-events: none;
+}
+
+#game_foreground {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/forgrund.svg);
+  background-size: 100%;
+  pointer-events: none;
+}
+
+/* ********************* UI elementer ********************* */
+
+#game_ui {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+#score_board {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  position: absolute;
+  top: 64.6%;
+  left: 7%;
+  width: 28%;
+  aspect-ratio: 8/3;
+  background-image: url(../img/ui_points.svg);
+  background-size: cover;
+}
+#mine_points {
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: yellow;
+}
+#energy_board {
+  position: absolute;
+  top: 80%;
+  left: 0%;
+  width: 36%;
+  aspect-ratio: 3/1;
+  background-image: url(../img/ui_life.svg);
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#mine_liv {
+  font-size: 3rem;
+  font-family: sans-serif;
+  color: lime;
+}
+#heart1,
+#heart2,
+#heart3 {
+  position: absolute;
+  width: 14%;
+  aspect-ratio: 81.87/72.35;
+  background-image: url(../img/heart.svg);
+  background-size: cover;
+  top: 39.2%;
+  left: 44.4%;
+}
+#heart2 {
+  left: 59.3%;
+}
+#heart3 {
+  left: 74.4%;
+}
+
+#time_board {
+  position: absolute;
+  top: 64%;
+  left: 1%;
+  width: 6%;
+  aspect-ratio: 100/160;
+  background-image: url(../img/ui_time.svg);
+  background-size: cover;
+}
+
+/* ********************* Start- og slutskærme ********************* */
+/* Brug evt. inspektoren til at se dem ved at fjerne display:none */
+
+#start {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/start.svg);
+  background-size: cover;
+}
+#play {
+  position: absolute;
+  width: 20%;
+  left: 37%;
+  top: 56%;
+  aspect-ratio: 470/280;
+  background-image: url("../img/play_btn.svg");
+  background-size: cover;
+}
+#play:hover {
+  width: 22%;
+  left: 36%;
+  top: 54%;
+}
+
+#game_over {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/gameover.svg);
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.8); */
+  background-color: black;
+}
+#play_again_1,
+#play_again_2 {
+  position: absolute;
+  width: 30%;
+  aspect-ratio: 640/280;
+  background-image: url("../img/spil_igen.svg");
+  background-size: cover;
+  top: 55%;
+  left: 40%;
+}
+
+#level_complete {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  height: 100%;
+  background-image: url(../img/levelcomplete.svg);
+  background-size: cover;
+  /* background-color: rgba(0, 0, 0, 0.5); */
+  background-color: black;
+}
